@@ -4,7 +4,7 @@
 syntax "haxe" "\.hx$"
 color magenta "\<(package|import|using)\>"
 color brightgreen "\<(class|enum|extends|function|implements|interface|typedef|var|private|public|static|override|inline)\>"
-color brightred "\<(new|return|throw|for|in|if|else|while|switch|case|default|null)\>"
+color brightred "\<(new|return|throw|for|in|if|else|while|switch|case|default|dynamic|null)\>"
 color brightcyan "\<[A-Z][a-zA-Z0-9_]*\>"
 ## Strings
 color brightyellow ""[^"]*""
@@ -16,4 +16,4 @@ color brightblack "//.*"
 color brightblack start="/\*" end="\*/"
 ## Compiler
 color brightblue "^#(if|else|elseif|end|error).*"
-color magenta "(true|false)"
+color magenta "(true|false|get|set)"
