@@ -16,3 +16,4 @@ color brightblack "//.*"
 color brightblack start="/\*" end="\*/"
 ## Compiler
 color brightblue "^#(if|else|elseif|end|error).*"
+color magenta "(true|false)"
