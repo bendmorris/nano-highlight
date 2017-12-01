@@ -1,0 +1,24 @@
+## HashiCorp Config Language highlighting
+## Author: Maximiliano "rammserker" Fernandez
+## Copyright 2011
+syntax "HCL" "\.(tf)$"
+## Default
+color white "^.+$"
+## Keys
+color blue "[a-zA-Z0-9_-]+"
+## Numbers
+color yellow "\<[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?\>"
+color yellow "\<[-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
+color yellow "\<[-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
+## Literals
+color red "\<(true|false)\>"
+## Keywords
+color green "\<(provider|variable|data|output|resource)\>"
+## String
+color brightyellow "L?\"(\\"|[^"])*\""
+## Escapes
+color red "\\[0-7][0-7]?[0-7]?|\\x[0-9a-fA-F]+|\\[bfnrt'"\?\\]"
+## Comments
+color magenta start="/\*" end="\*/"
+color magenta "//.*$"
+color magenta "#.*$"
